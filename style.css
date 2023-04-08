@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+html{
+    font-family: 'Nunito';
+    font-size: 12px;
+    font-weight: 600;
+
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: rgba(26, 27, 26);
+
+}
+
+.container{
+    width:80%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand{
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+form{
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: rgba(233,233,233);
+    border-radius: 14px;
+}
+
+form input{
+    width: 90%;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    display: inline-block;
+
+
+}
+
+form i{
+    width: 9%;
+    font-size: 3rem;
+    margin: -10px;
+    color: rgba(75,75,75);
+}
+
+.search-result{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+    /* row auto colums 3 fisrt is auto fit 2nd shoudl be min 300px max 1fr */
+    
+}
+
+.item{
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(37,37,37);
+    /* background-color: yellow; */
+    padding: 20px;
+    overflow-x: scroll;
+    
+
+
+}
+
+
+.item img{
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+}
+
+
+
+.item .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.item .title{
+    color: white;
+    margin: 20px 10px 0 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.view-btn{
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    padding: 10px 0;
+    background-color: #404041;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    
+}
+
+.view-btn:hover{
+background-color: white;
+color: #404041;
+}
+
+.item-data{
+    color: white;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    letter-spacing: .05rem;
+    line-height: 2rem;
+}
+
+
+.container.initial .brand{
+font-size: 7rem;
+}
+
+.container.initial{
+    max-width: 800px;
+}
+
+.container.initial input{
+    padding: 20px;
+    font-size: 3rem;
+}
+
+footer .footer-container{
+    width: 100%;
+    height: 10vh;
+    background-color:rgb(153, 153, 140);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+
+}
+
+.copyright{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: auto;
+    
+
+}
+
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.img img{
+    border-radius: 50%;
+}
+
+
+@media (max-width: 768px){
+    .search-result{
+        grid-gap: 10px;
+    }
+    .container.initial .brand{
+        font-size: 4rem;
+
+    }
+    .container.initial form{
+        max-width: 500px;
+
+    }
+    .container.initial form input{
+        padding: 10px;
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
